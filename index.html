@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Dice Simulator</h1>
+    
+    <div class="controls">
+    <label for="diceCount">Dice Count:</label>
+   <select id="diceCount">
+        <option value="1">1 Die</option>
+        <option value="2" selected>2 Dice</option>
+      </select>
+    </div>
+
+    <div class="dice-area" id="diceContainer"></div>
+
+    <p class="total-score" id="totalScore">Total: -</p>
+
+    <button id="rollBtn">Roll Dice</button>
+
+    <div class="history-section">
+   <h3>Recent Rolls</h3>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
