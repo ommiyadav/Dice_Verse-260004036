@@ -13,7 +13,6 @@ function rollDice(){
   let currentRolls = [];
   let sum = 0
 
-  // show temporary question mark while rolling
   for(let i=0; i<count; i++) {
     let tempDiv = document.createElement('div')
     tempDiv.className = 'dice rolling'
@@ -39,7 +38,6 @@ function rollDice(){
 
     totalScoreEl.innerText = "Total: " + sum;
     
-    // update history log
     let logText = "Rolled: [ " + currentRolls.join(', ') + " ] | Total: " + sum;
     rollHistory.unshift(logText);
 
@@ -60,5 +58,4 @@ function rollDice(){
 
 rollBtn.addEventListener('click', rollDice)
 
-// initial roll on load
 rollDice();
